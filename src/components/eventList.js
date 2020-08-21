@@ -14,7 +14,7 @@ export default class EventList extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/events/', {
+        fetch('http://localhost:8080/events/', {
             method: 'GET',
             headers: {
                 'authorization': localStorage.getItem("token"),
@@ -29,7 +29,7 @@ export default class EventList extends Component {
 
     handleDelete(id) {
 
-        fetch("http://localhost:3001/events/"+id, {
+        fetch("http://localhost:8080/events/"+id, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

@@ -75,7 +75,7 @@ export default class CreateEvent extends Component {
         console.log(this.state)
 
         this.setState({ event_creator: 2 })
-        fetch('http://localhost:3001/events/', {
+        fetch('http://localhost:8080/events/', {
             method: 'POST',
             headers: {
                 'authorization': localStorage.getItem("token"),
