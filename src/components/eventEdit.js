@@ -29,7 +29,7 @@ export default class eventEdit extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:8080/events/' + this.props.match.params.id, {
+        fetch('http://172.24.98.178:8080/events/' + this.props.match.params.id, {
             method: 'GET',
             headers: {
                 'authorization': localStorage.getItem("token"),
@@ -96,7 +96,7 @@ export default class eventEdit extends Component {
         console.log(this.state)
 
         this.setState({ event_creator: 2 })
-        fetch('http://localhost:3001/events/' + this.props.match.params.id, {
+        fetch('http://172.24.98.178:3001/events/' + this.props.match.params.id, {
             method: 'PUT',
             headers: {
                 'authorization': localStorage.getItem("token"),
