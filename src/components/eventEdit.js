@@ -29,7 +29,7 @@ export default class eventEdit extends Component {
     }
 
     componentDidMount() {
-        fetch('http://35.198.15.156:8080/events/' + this.props.match.params.id, {
+        fetch('http://3.131.142.53:8080/events/' + this.props.match.params.id, {
             method: 'GET',
             headers: {
                 'authorization': localStorage.getItem("token"),
