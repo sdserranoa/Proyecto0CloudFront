@@ -31,7 +31,7 @@ export default class Home extends Component {
 
     handleLogin(e) {
         e.preventDefault();
-        fetch("http://35.198.15.156:8080/users/api-auth", {
+        fetch("http://3.131.142.53:8080/users/api-auth", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
