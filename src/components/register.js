@@ -55,7 +55,7 @@ export default class Register extends Component {
             "password": this.state.password
         }
 
-        fetch("http://172.24.98.178:8080/users", {
+        fetch("http://35.198.15.156:8080/users", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
