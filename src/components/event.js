@@ -14,7 +14,7 @@ export default class Event extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://35.198.15.156:8080/events/' + this.props.match.params.id, {
+        fetch('http://18.191.163.247:8080/events/' + this.props.match.params.id, {
             method: 'GET',
             headers: {
                 'authorization': localStorage.getItem("token"),
